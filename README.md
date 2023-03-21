@@ -8,11 +8,13 @@
 
 これ以降のバージョンであれば概ね動くと思いますが、うまく動かない場合は上記のバージョンをお試しください。
 
-前提条件：
-Homebrewとawscliインストール済み
+### 前提条件：
+- AWSの管理者権限を持つクレデンシャルをお持ちである必要があります。
+- Homebrewとawscliがインストールされている必要があります。
 ※インストールしてない場合はは公式サイトを参考しインストールしてください：https://brew.sh/index_ja
 
-Terraformバージョン切り替えを簡単にできるように下記を参考にtfenvをインストールしていきます。
+### 事前準備：
+- Terraformバージョン切り替えを簡単にできるように下記を参考にtfenvをインストールしていきます。
 
 ```
 $ brew update && brew upgrade
@@ -21,3 +23,15 @@ $ brew install tfenv
 
 .terraform-versionを配置しているため、Terraform実行時に指定したversionのterraformに切り替えるもしくはインストールが行います。
 
+### リポジトリ構成
+IaaSごとにマネージドサービス別にサンプルコードを分けています。ローカルからの実行方法については、それぞれのREADMEを参照してください。
+
+```
+aws
+  |_ecs
+  |_eks
+azure
+  |_appservice
+gcp
+  |_gke
+```
