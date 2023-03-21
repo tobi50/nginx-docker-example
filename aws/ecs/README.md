@@ -31,3 +31,17 @@ $ terraform plan
 ```
 $ terraform apply -auto-approve
 ```
+
+- apply結果からALBのURL (lb_dns_name) をコピーしてブラウザからアクセスします
+
+```
+Apply complete! Resources: 12 added, 1 changed, 1 destroyed.
+
+Outputs:
+
+lb_dns_name = "nginx-1234567.ap-northeast-1.elb.amazonaws.com"
+private_subnets = [
+  "subnet-0exxxxxxxxxxe",
+...
+```
+
