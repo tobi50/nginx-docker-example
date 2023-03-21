@@ -16,13 +16,15 @@
 ### 事前準備：
 - Terraformバージョン切り替えを簡単にできるように下記を参考にtfenvをインストールしていきます。
 
+https://github.com/tfutils/tfenv
+
 ```
 $ brew update && brew upgrade
 $ brew install tfenv
 ```
 
 .terraform-versionを配置しているため、Terraform実行時に指定したversionのterraformに切り替えるもしくはインストールが行います。
-https://github.com/tfutils/tfenv
+
 
 ### リポジトリ構成
 IaaSごとにマネージドサービス別にサンプルコードを分けています。ローカルからの実行方法については、それぞれのREADMEを参照してください。
