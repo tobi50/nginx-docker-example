@@ -1,0 +1,19 @@
+# editor
+.vscode/*
+.idea
+
+# log files
+*.log
+
+# HCL
+*.hcl
+!*.tflint.hcl
+
+# terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+variables.secret.tf
+__*.tf
+!_templates/__*.tf
