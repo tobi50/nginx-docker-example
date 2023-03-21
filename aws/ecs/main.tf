@@ -10,13 +10,13 @@ module "vpc" {
   cidr = "10.0.0.0/16"
 
   # 可用性ゾーン (AZ) を指定
-  azs = ["${local.region}a"]
+  azs = ["${local.region}a", "${local.region}c"]
 
   # プライベートサブネットの CIDR ブロックを指定
-  private_subnets = ["10.0.1.0/24"]
+  private_subnets = ["10.0.1.0/24", "10.0.2.0/24"]
 
   # パブリックサブネットの CIDR ブロックを指定
-  public_subnets = ["10.0.101.0/24"]
+  public_subnets = ["10.0.101.0/24", "10.0.102.0/24"]
 
   # NAT ゲートウェイを有効にする
   enable_nat_gateway = true
@@ -97,10 +97,10 @@ resource "aws_security_group_rule" "internal_eegress" {
 
 # セキュリティグループ内のすべての通信を許可するセキュリティグループルールの定義
 resource "aws_security_group_rule" "internal_ingress" {
-  type              = "ingress"
-  from_port         = 0
-  to_port           = 0
-  protocol          = "all"
+  type      = "ingress"
+  from_port = 0
+  to_port   = 0
+  protocol  = "all"
 
   # 自分自身のセキュリティグループに対して許可
   self = true
