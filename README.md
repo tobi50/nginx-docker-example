@@ -1,11 +1,18 @@
-# nginx-docker-example
-想定した開発環境：Mac OS
-IaSツール:Terraform
+# コンテナベースで "Welcome to ntinx" を表示するリソース作成のTerraformサンプルコード
 
-前提条件：Homebrewとawscliインストール済み
+動作確認はすべて、macOS上で行っています。
+バージョンは次のとおりです。
+
+- Terraform：1.4.3
+- AWSプロバイダ：4.59.0
+
+これ以降のバージョンであれば概ね動くと思いますが、うまく動かない場合は上記のバージョンをお試しください。
+
+前提条件：
+Homebrewとawscliインストール済み
 ※インストールしてない場合はは公式サイトを参考しインストールしてください：https://brew.sh/index_ja
 
-IaSツールのTerraformバージョン切り替えを簡単にできるように下記を参考にtfenvをインストールしていきます。
+Terraformバージョン切り替えを簡単にできるように下記を参考にtfenvをインストールしていきます。
 
 ```
 $ brew update && brew upgrade
@@ -13,3 +20,4 @@ $ brew install tfenv
 ```
 
 .terraform-versionを配置しているため、Terraform実行時に指定したversionのterraformに切り替えるもしくはインストールが行います。
+
