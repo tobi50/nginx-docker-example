@@ -1,4 +1,4 @@
-# コンテナベースで "Welcome to ntinx" を表示するリソース作成のTerraformサンプルコード
+## コンテナベースで "Welcome to ntinx" を表示するリソース作成のTerraformサンプルコード
 
 動作確認はすべて、macOS上で行っています。
 バージョンは次のとおりです。
