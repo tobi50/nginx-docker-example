@@ -50,3 +50,7 @@ private_subnets = [
 ![nginx](https://user-images.githubusercontent.com/47206868/226575203-79276de9-1dba-41f4-bbbb-8e0b37c6f16e.png)
 
 
+- 下記URLでECSのタスク数を0にする
+-- 注意：ECSタスク数が0以外の状態ではdestroyが失敗するためタスク数を手動で0にしてからdestroyします
+
+https://ap-northeast-1.console.aws.amazon.com/ecs/v2/clusters/nginx/services/nginx/update?region=ap-northeast-1
