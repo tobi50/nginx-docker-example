@@ -45,7 +45,8 @@ private_subnets = [
 ...
 ```
 
-- ブラウザで確認
+- ブラウザで "Welcome to ntinx" を確認
+
 ![nginx](https://user-images.githubusercontent.com/47206868/226575203-79276de9-1dba-41f4-bbbb-8e0b37c6f16e.png)
 
 
