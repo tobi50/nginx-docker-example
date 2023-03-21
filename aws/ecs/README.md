@@ -56,3 +56,8 @@ private_subnets = [
 https://ap-northeast-1.console.aws.amazon.com/ecs/v2/clusters/nginx/services/nginx/update?region=ap-northeast-1
 ![Amazon_ECS](https://user-images.githubusercontent.com/47206868/226576869-63c433a6-cc89-40ee-87ea-46ba7efb7627.png)
 
+- destroy
+
+```
+$ terraform destroy -auto-approve
+```
