@@ -25,15 +25,9 @@ $ brew install tfenv
 
 ### リポジトリ構成
 IaaSごとにマネージドサービス別にサンプルコードを分けています。ローカルからの実行方法については、それぞれのREADMEを参照してください。
+今回は、AWSのECSを使用して「Welcome to nginx」と表示されるIaC（Infrastructure as Code）実装をローカル環境から実行します。
 
 ```
 aws
   |_ecs
-  |_eks
-azure
-  |_app_service
-  |_container_apps
-  |_aks
-gcp
-  |_gke
 ```
