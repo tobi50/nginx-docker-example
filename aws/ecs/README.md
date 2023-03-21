@@ -16,7 +16,7 @@ $ export AWS_SECRET_ACCESS_KEY="asecretkey"
 - AWS用Terraformプロジェクトの初期化
 
 ```
-$ cd aws
+$ cd aws/ecs
 $ terraform init
 ```
 
