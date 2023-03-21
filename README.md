@@ -31,7 +31,9 @@ aws
   |_ecs
   |_eks
 azure
-  |_appservice
+  |_app_service
+  |_container_apps
+  |_aks
 gcp
   |_gke
 ```
