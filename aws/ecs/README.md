@@ -32,7 +32,7 @@ $ terraform plan
 $ terraform apply -auto-approve
 ```
 
-- apply結果からALBのURL (lb_dns_name) をコピーしてブラウザからアクセスします
+- apply結果からALBのURL (lb_dns_name) をコピーしてブラウザで動作確認
 
 ```
 Apply complete! Resources: 12 added, 1 changed, 1 destroyed.
@@ -44,4 +44,8 @@ private_subnets = [
   "subnet-0exxxxxxxxxxe",
 ...
 ```
+
+- ブラウザで確認
+![nginx](https://user-images.githubusercontent.com/47206868/226575203-79276de9-1dba-41f4-bbbb-8e0b37c6f16e.png)
+
 
